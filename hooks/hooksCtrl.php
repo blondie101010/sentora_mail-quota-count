@@ -20,7 +20,7 @@ use PDO;
 class Controller
 {
 
-    public function updateQuotas()
+    public static function updateQuotas()
     {
         global $zdbh;
 
@@ -107,7 +107,7 @@ class Controller
     }
 
 
-    public function checkQuotas()
+    public static function checkQuotas()
     {
         global $zdbh, $controller;
 
@@ -212,7 +212,7 @@ class Controller
         echo "Updated The Mail and Disk Space Usage";
     }
 
-    public function createClient()
+    public static function createClient()
     {
         global $zdbh;
 
@@ -229,7 +229,7 @@ class Controller
            VALUES ("' . $lastAcc['ac_user_vc'] . '", 0, 0)');
     }
 
-    public function deleteClient()
+    public static function deleteClient()
     {
         global $zdbh;
 
